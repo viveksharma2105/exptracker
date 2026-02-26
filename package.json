@@ -1,9 +1,13 @@
 {
   "name": "exptracker",
-  "module": "index.ts",
+  "module": "server/index.ts",
   "type": "module",
   "devDependencies": {
     "@types/bun": "^1.3.9"
+  },
+  "scripts": {
+    "start": "bun server/index.ts",
+    "dev": "bun --watch server/index.ts"
   },
   "peerDependencies": {
     "typescript": "^5"
